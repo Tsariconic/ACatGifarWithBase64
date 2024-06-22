@@ -6,9 +6,9 @@ public class Main
     {
         // Function to calculate moon phase
 function getMoonPhase(year, month, day) {
-    var moonPhaseNames = ["New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous", 
+    const moonPhaseNames = ["New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous", 
                           "Full Moon", "Waning Gibbous", "Last Quarter", "Waning Crescent"];
-    var moonPhases = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22];
+    const moonPhases = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22];
     var c = 0;
     var e = 0;
     var jd = 0;
@@ -38,8 +38,8 @@ function getMoonPhase(year, month, day) {
 // Function to get current date and time in the desired format
 function getCurrentDateTime() {
     var now = new Date();
-    var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    var monthNames = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
+    const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const monthNames = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
     var seconds = now.getSeconds();
     var date = now.getDate();
     var month = monthNames[now.getMonth()];
