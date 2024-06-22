@@ -39,7 +39,7 @@ function getMoonPhase(year, month, day) {
 function getCurrentDateTime() {
     var now = new Date();
     var dayOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    var monthNames = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'];
+    var monthNames = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"];
     var seconds = now.getSeconds();
     var date = now.getDate();
     var month = monthNames[now.getMonth()];
