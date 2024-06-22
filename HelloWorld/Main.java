@@ -47,7 +47,7 @@ function getCurrentDateTime() {
     var day = dayOfWeek[now.getDay()];
     var moonPhase = getMoonPhase(year, now.getMonth() + 1, date);
 
-    var dateTimeString = `${now.getHours()}:${now.getMinutes()}:${seconds} ${day} ${date}/${month}/${year} ${moonPhase}`;
+    var dateTimeString = sprintf("%a:%b:%c %d %e/%f/%g %h", now.getHours(), now.getMinutes(), seconds, day, date, month, year, moonPhase);
     return dateTimeString;
 }
 
