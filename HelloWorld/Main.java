@@ -8,9 +8,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.TextStyle;
 import java.util.Locale;
-
-public class DateTimeWithMoonPhase {
-
     // Function to calculate moon phase
     public static String getMoonPhase(int year, int month, int day) {
         String[] moonPhaseNames = {"New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous", 
@@ -51,7 +48,6 @@ public class DateTimeWithMoonPhase {
     public static void main(String[] args) {
         System.out.println(getCurrentDateTime());
     }
-}
 
     }
 }
